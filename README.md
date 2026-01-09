@@ -6,7 +6,7 @@ This project focuses on clean UI design, structured layout, and mobile responsiv
 ---
 
 ## 🚀 Live Demo
-https://logashree03.github.io/movie-ticket-booking-ui/
+ https://logashree03.github.io/Movie-Ticket-Booking-UI/
 
 ---
 
