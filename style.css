@@ -1,0 +1,267 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.movie_Title
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_name
+{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+}
+.content>p
+{
+    border: 1px solid black;
+    padding: 5px;
+    width: 39%;
+    border-radius: 7px;
+    margin-right: 12px;
+}
+.Ticket
+{
+    padding: 20px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.booking
+{
+    display: flex;
+    justify-content: space-between;
+}
+.book_info
+{
+    display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: baseline;
+}
+.Dat_tim
+{
+    display: flex;
+    gap: 50px;
+}
+body
+{
+    font-size: 20px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+.box-container
+{
+    width: 45%;
+    background: #26c6da;
+    padding: 24px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.footer
+{
+    display: flex;
+    justify-content: center;
+    gap:52px;
+}
+.btn 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Dat_tim>div>p,h4
+{
+   color:darkgoldenrod;
+
+}
+.para
+{
+    color:darkgoldenrod;
+}
+span
+{
+    color:darkgoldenrod;
+}
+
+/* ---------- Smooth global transition ---------- */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* ---------- Ticket card hover effect ---------- */
+.box-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Movie poster subtle zoom ---------- */
+.movie_Title img {
+    border-radius: 12px;
+}
+
+.movie_Title img:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- QR code gentle pulse ---------- */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.booking img {
+    animation: pulse 2.5s infinite;
+}
+
+/* ---------- Button branding highlight ---------- */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Text hover clarity ---------- */
+h1:hover,
+h3:hover {
+    letter-spacing: 3px;
+}
+
+
+/* ---------- General Responsive Fixes ---------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Allow flex items to wrap instead of overflowing */
+.movie_Title,
+.booking,
+.Dat_tim,
+.footer {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ---------- Mobile Devices (max-width: 600px) ---------- */
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .box-container {
+        width: 100%;
+        margin: 0;
+        padding: 16px;
+    }
+
+    .Ticket {
+        padding: 16px;
+        gap: 20px;
+    }
+
+    .movie_Title {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title_name {
+        align-items: center;
+        gap: 16px;
+    }
+
+    .content {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .content > p {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .booking {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book_info {
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Dat_tim {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+}
+
+/* ---------- Tablets (600px–800px) [Your existing range improved] ---------- */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+
+    .box-container {
+        width: 90%;
+    }
+
+    .movie_Title {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .booking {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer {
+        gap: 30px;
+    }
+}
